@@ -2779,5 +2779,119 @@ margin-left: -8px;
     height: 100%;
     border: 0;
 }
+/* Base */
+.btn-floating:hover img {
+    margin-bottom: -3px
+  }
+  
+  .btn-floating {
+      position: fixed;
+      right: 25px;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      border: 0;
+      z-index: 9999;
+      color: white;
+      transition: .2s;
+  }
+  
+  .btn-floating:hover {
+      width: auto;
+      padding: 0 20px;
+      cursor: pointer;
+  }
+  
+  .btn-floating span {
+      font-size: 16px;
+      margin-left: 5px;
+      transition: .2s;
+      line-height: 0px;
+      display: none;
+  }
+  
+  .btn-floating:hover span {
+      display: inline-block;
+  }
+  
+  /* Phone */
+  .btn-floating.phone {
+      bottom: 135px;
+      background-color: #760f10;
+  }
+  
+  .btn-floating.phone:hover {
+      background-color: #c03421;
+  }
+  
+  /* WhatsApp */
+  .btn-floating.whatsapp {
+      background-color: #34af23;
+      bottom: 65px;
+  }
+  
+  .btn-floating.whatsapp:hover {
+      background-color: #1f7a12
+  }
 
+  .booking-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    position: relative;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.step-icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77 77 83);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step h2 {
+    margin-bottom: 10px;
+}
+
+/* Connector Line */
+.line {
+    width: 80%;
+    height: 5px;
+    background-color:#ea9423;
+    position: absolute;
+    top: 85px;
+    left: 10%;
+    z-index: -1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .booking-process {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .step {
+        margin-bottom: 40px;
+    }
+}
 
